@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Techzone House</title>
+</head>
+<body>
+    <div class="row" style="margin: 0.25rem 0.25rem !important;">
+        <div class="col-lg-8">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="header-inner ">
+                        <div class="left-bar">
+                            <a href=""><i class="fa fa-user" aria-hidden="true"
+                                    id="openModal"></i>
+                                <span>
+                                    Techzone House
+                                </span>
+                            </a>
+                        </div>
+                        <div class="right-bar">
+                            <a href="#"><i class="fa fa-cog"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>This is the content of the module.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-inner">
+                        <div class="left-bar">
+                            <button type="button"
+                                class="btn btn-success btn-sm"><i
+                                    class="fa fa-ravelry"
+                                    aria-hidden="true"></i> All
+                                Categories</button>
+                            <button type="button"
+                                class="btn btn-outline-success btn-sm"><i
+                                    class="fa fa-ravelry"
+                                    aria-hidden="true"></i> Category
+                                1</button>
+                            <button type="button"
+                                class="btn btn-outline-success btn-sm"><i
+                                    class="fa fa-ravelry"
+                                    aria-hidden="true"></i> Category
+                                2</button>
+                            <button type="button"
+                                class="btn btn-outline-success btn-sm"><i
+                                    class="fa fa-ravelry"
+                                    aria-hidden="true"></i> Category
+                                3</button>
+                            <button type="button"
+                                class="btn btn-outline-success btn-sm"><i
+                                    class="fa fa-ravelry"
+                                    aria-hidden="true"></i> Category
+                                4</button>
+                        </div>
+                        <div class="right-bar">
+                            <a href=""><i class="fa fa-bars"
+                                    aria-hidden="true"></i></a>
+                            <input type="text"
+                                class="form-control form-control-sm"
+                                placeholder="Search in Techzone">
+                        </div>
+                    </div>
+                    <div class="card-lower">
+                        <div class="card-deck">
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/OIG2.j.YwcqQt.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-delicious img-fa img-fa2"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/brain.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-lock img-fa"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/apps.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-lock img-fa"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/laptop.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-link img-fa img-fa3"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-lower">
+                        <div class="card-deck">
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/brain.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-lock img-fa"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/OIG2.j.YwcqQt.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-delicious img-fa img-fa2"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/apps.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-lock img-fa"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/laptop.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-link img-fa img-fa3"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-lower">
+                        <div class="card-deck">
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/OIG2.j.YwcqQt.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-delicious img-fa img-fa2"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/brain.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-lock img-fa"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/laptop.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-link img-fa img-fa3"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card col-lg-3">
+                                <div class="card-img-container">
+                                    <img src="imgs/apps.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <i class="fa fa-lock img-fa"
+                                        aria-hidden="true"></i>
+                                    <div class="overlay">
+                                        <div class="quantity add-to-cart-btn q-btn"
+                                            style="display:none;">
+                                            <span class="quantity-text">Qty
+                                                1</span>
+                                            <button class="minus-btn">-</button>
+                                            <button class="plus-btn">+</button>
+                                        </div>
+                                        <button class="add-to-cart-btn">Add to
+                                            Cart <i class="fa fa-shopping-cart"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="shopping-wrap main">
+                <div class="container">
+                    <div class="shopping-inner">
+                        <div class="heading">
+                            <h2>Shopping cart</h2>
+                        </div>
+                        <div class="cart-item">
+                            <div class="item-details">
+                                <img src="imgs/3d.jpeg">
+                                <p class="item-name">Item 1 <br>
+                                    <span>lorem ipsum</span>
+                                </p>
+                            </div>
+                            <div class="right-div" style="display: flex;">
+                                <div class="item-info">
+                                    <p class="item-price-quantity">Price: $15 |
+                                        Qty: 1
+                                    </p>
+                                </div>
+                                <button class="delete-btn"><i
+                                        class="fa fa-trash-o"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="item-details">
+                                <img src="imgs/apps.jpeg">
+                                <p class="item-name">Item 2</p>
+                            </div>
+                            <div class="right-div" style="display: flex;">
+                                <div class="item-info">
+                                    <p class="item-price-quantity">Price: $15 |
+                                        Qty: 1
+                                    </p>
+                                </div>
+                                <button class="delete-btn"><i
+                                        class="fa fa-trash-o"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="item-details">
+                                <img src="imgs/brain.jpeg">
+                                <p class="item-name">Item 3</p>
+                            </div>
+                            <div class="right-div" style="display: flex;">
+                                <div class="item-info">
+                                    <p class="item-price-quantity">Price: $15 |
+                                        Qty: 1
+                                    </p>
+                                </div>
+                                <button class="delete-btn"><i
+                                        class="fa fa-trash-o"
+                                        aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="first">
+                                <p>Recipient Details</p>
+                                <span class="del">Delivery Cost : $5</span>
+                            </div>
+                            <p class="first-p">Deliver within 5 Days</p>
+                            <p class="first-p mob">Enter Mobile Number / Email
+                                Address
+                            </p>
+                            <h6 class="first-p">Address : <span>No 122/8,
+                                    Cypress Garden, Budiya
+                                    Highway, Bahrain</span>
+                            </h6>
+                            <h6 class="first-p">Phone : <span>+973 -
+                                    17210435</span>
+                            </h6>
+                            <button class="btn-success success">Add/Change
+                                Address</button>
+                        </div>
+                        <div class="details">
+                            <div class="first">
+                                <p>Pay Through</p>
+                                <span class="del">Total : $114</span>
+                            </div>
+                            <div class="imgs">
+                                <img class="img-2nd" src="imgs/Group 3959.png"
+                                    alt="">
+                                <img src="imgs/MasterCard_Logo 3.png" alt="">
+                                <img src="imgs/Binance-Logo 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-success success last-success"
+                    style="font-size: 1rem;">Check out
+                    $140</button>
+            </div>
+        </div>
+        <!-- <div class="cart">
+            <div class="imgs">
+                <div class="image-container">
+                    <img src="imgs/Ellipse 1906.png" alt="">
+                    <i class="fa fa-times remove-icon" aria-hidden="true"></i>
+                </div>
+                <div class="image-container">
+                    <img src="imgs/Ellipse 1907.png" alt="">
+                    <i class="fa fa-times remove-icon" aria-hidden="true"></i>
+                </div>
+                <div class="image-container">
+                    <img src="imgs/Ellipse 1908.png" alt="">
+                    <i class="fa fa-times remove-icon" aria-hidden="true"></i>
+                </div>
+                <div class="image-container">
+                    <img src="imgs/OIG2.j.YwcqQt.jpeg" alt="">
+                    <i class="fa fa-times remove-icon" aria-hidden="true"></i>
+                </div>
+                <div class="total">
+                    <p>View Cart <br>
+                        $82.00 <br>
+                        (Sub Total)</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('.right-bar').addEventListener('click',
+        function() {
+            document.getElementById('myModal').style.display = 'block';
+        });
+        document.querySelector('.close').addEventListener('click', function() {
+            document.getElementById('myModal').style.display = 'none';
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".add-to-cart-btn").click(function() {
+                var parentContainer = $(this).closest(
+                    '.card-img-container');
+                $(this).hide();
+                var quantityText = parentContainer.find(
+                    '.quantity-text');
+                quantityText.text(
+                    'Qty 1'
+                ); // Reset quantity text to 1 when "Add to Cart" is clicked
+                parentContainer.find('.quantity').show();
+            });
+            $(".plus-btn").click(function() {
+                var parentContainer = $(this).closest(
+                    '.card-img-container');
+                var quantityText = parentContainer.find(
+                    '.quantity-text');
+                var currentValue = parseInt(quantityText.text()
+                    .replace('Qty ', '') || 0);
+                quantityText.text('Qty ' + (currentValue + 1));
+            });
+            $(".minus-btn").click(function() {
+                var parentContainer = $(this).closest(
+                    '.card-img-container');
+                var quantityText = parentContainer.find(
+                    '.quantity-text');
+                var currentValue = parseInt(quantityText.text()
+                    .replace('Qty ', '') || 0);
+                if (currentValue > 1) {
+                    quantityText.text('Qty ' + (currentValue -
+                        1));
+                }
+            });
+        });
+    </script>
+</body>
+</html>
