@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-wrapper{
+    background-color: #f0f2fa;
+}
+.left-sidebar {
+    background-color: #f0f2fa;
+    padding: 20px;
+}
+
+.right-content {
+    padding: 20px;
+}
+
+.right-content > div {
+    background-color: #ffffff; /* White background color */
+    border-radius: 15px; /* Adjust border radius as needed */
+    padding: 20px;
+    box-shadow: 5px 5px 15px #bfc2cb, -5px -5px 15px #ffffff; /* Neomorphic effect */
+
+}
+
+.sidebar {
+    background-color: transparent; /* Sidebar background color */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color:#1c274c !important;
+}
+
+/* Define custom colors */
+:root {
+    --color-primary: #138953;   /* Green */
+    --color-secondary: #28921a; /* Greenish */
+    --color-tertiary: #0d8763;  /* Teal */
+}
+
+
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white; /* Text color for links */
+    display: block; /* Ensure the link takes up the full width of its parent */
+    /* padding: 10px;  */
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+    border-radius: 5px;
+}
+
+/* .sidebar ul li a.active,
+.sidebar ul li a:hover {
+    border-radius: 5px;
+    color: white !important;
+
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-tertiary));
+} */
+
+.fa-arrow-left{
+    background-color: #28921a;
+    padding: 8px;
+    border-radius: 25px;
+}
+.tech-text{
+    font-weight: bold;
+}
+.fa-user{
+    padding-right: 9px;
+}
+.fa-gear{
+    padding-right: 9px;
+}
+.fa-shopping-bag{
+    padding-right: 9px;
+}
+
+.img-right img{
+    height: 200px;
+    width: 200px;
+}
+
+.btn-round{
+    border-radius: 18px;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+
+.saved-address {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 450px;
+    position: relative; /* Needed for pseudo-element positioning */
+    background-color: #f4f4f4;
+}
+
+.custom-hr {
+    width: 60%;
+    border: none;
+    height: 1px;
+    background-color: black;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+
+
+/* link css */
+.link-img{
+    background-color: #dcdcdc;
+     border-radius:50%;
+     height:210px;
+     width:210px;
+     margin-left:0;
+}
+.store-detail{
+    margin-top: 20px;
+}
+.fa-envelope,.fa-phone,.fa-user{
+    color:#2d7324;
+    padding-right: 12px;
+
+}
+
+
+
+  .colorful-background {
+        flex-direction: row;
+        height: 120px; /* Adjust height as needed */
+        background: linear-gradient(to bottom right, rgba(70, 131, 33, 0.7) 10%, rgba(141, 146, 49, 0.7) 20%, rgba(78, 114, 38, 0.7) 30%, rgba(232, 210, 115, 0.7) 40%, rgba(56, 64, 31, 0.7) 50%, rgba(189, 146, 52, 0.7) 60%, rgba(76, 67, 41, 0.7) 70%);
+        color: white; /* Text color */
+        border-radius: 10px;
+  }
+  .inner-colorful{
+    padding-left: 10px;
+  }
+  .color-btn{
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+  }
+  .fa-arrow-right{
+    padding-left: 5px;
+    padding-right:5px;
+  }
+  .fa-square-facebook{
+    font-size: 20px;
+  }
+
+  .custom-container {
+    max-width: 1200px; /* Set your desired width here */
+    margin-right: auto;
+    margin-left: auto;
+  }
