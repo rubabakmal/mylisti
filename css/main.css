@@ -196,6 +196,10 @@ a {
   border-color: white !important;
   border: 1px solid white;
   margin-right: 3px;
+  padding-top: 0.1rem !important;
+  padding-bottom: 0.1rem !important;
+  padding-left: 0.3rem !important;
+  padding-right: 0.3rem !important;
 }
 .quantity input {
   width: 20px;
@@ -466,6 +470,7 @@ button {
   font-weight: bold;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .close:hover,
@@ -527,10 +532,10 @@ button {
   padding: 0.5rem;
   border-color: #fff;
   box-shadow: 0 0 0 0 white;
-  border: 2px solid white; /* Specify white border */
-  background-color: transparent; /* Transparent background */
-  /* border: none; */
+  border: 2px solid white;
+  background-color: transparent;
 }
+
 .box-otp input:focus {
   border-color: #fff;
   box-shadow: 0 0 0 0 white;
@@ -550,7 +555,189 @@ button {
   background-color: white;
   color: #177a20;
   outline: none;
-  /* border: none; */
 }
 
-/* OTP input style */
+.language-select {
+  background-color: #d9d9d9 !important;
+  border-color: #d9d9d9;
+}
+
+.custom-modal {
+  display: none;
+  position: fixed; /* Set position to fixed */
+  z-index: 9999; /* Set a high z-index */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+a {
+  text-decoration: none !important;
+}
+
+.fa-youtube-play {
+  color: #ce1312;
+}
+.custom-modal-content {
+  background-color: #fefefe;
+  margin: 1% auto;
+  padding: 25px;
+  border-radius: 15px;
+  width: 80%;
+  position: relative; /* Adjust position to relative */
+  z-index: 99999; /* Ensure the content is on top of the modal background */
+}
+.card-img-container {
+  cursor: pointer;
+}
+
+.custom-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute; /* Adjust position to absolute */
+  top: 0px; /* Set top position */
+  right: 10px; /* Set right position */
+  z-index: 999999; /* Ensure the close button is on top of the modal content */
+  cursor: pointer;
+}
+
+.my-modal {
+  /* display: none; */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.my-modal-content {
+  background-color: #fefefe;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  position: relative;
+  z-index: 99999;
+}
+
+.my-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999999;
+  cursor: pointer;
+}
+
+.my-card-img-top {
+  cursor: pointer;
+}
+
+.model-img {
+  height: 70vh;
+}
+
+.color-grey {
+  border: 1px solid #9c959e;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #9c959e;
+  margin-right: 2px;
+}
+
+.color-pink {
+  border: 1px solid #d299ff;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #d299ff;
+  margin-right: 2px;
+}
+
+.color-blue {
+  border: 1px solid #8ebbff;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #8ebbff;
+  margin-right: 2px;
+}
+
+.color-darkgrey {
+  border: 1px solid #6c6c6c;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: #6c6c6c;
+  margin-right: 2px;
+}
+.mid-colors-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.all-clrs {
+  display: flex;
+  padding: 10px;
+  /* padding: 2px 7px; */
+}
+
+.btn-x {
+  background-color: #eaeaea;
+  margin-right: 4px;
+  padding: 0.4rem;
+}
+
+.mid-colors-bar span {
+  color: black;
+  font-weight: bold;
+}
+.lower-imgs {
+  display: flex;
+  margin-top: 10px;
+}
+
+.lower-imgs img {
+  width: 6.5rem;
+  padding: 4px;
+}
+.des {
+  color: black;
+  font-weight: bold;
+}
+
+.des-p {
+  padding-top: 17px;
+  font-size: 13px;
+}
+
+.last-row {
+  display: flex;
+}
+.btnm {
+  border-radius: 50%; /* Making it a perfect circle */
+  padding: 10px; /* Adjust padding as needed */
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 5px;
+  margin-left: 5px;
+
+  outline: #eaeaea;
+  border-color: #eaeaea;
+  box-shadow: 0 0 47px -21px black;
+  border: 1px solid #eaeaea;
+}
+
+.fa-star {
+  color: #136207;
+}
+
+.dull {
+  color: #eaeaea;
+}
