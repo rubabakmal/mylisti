@@ -1,165 +1,275 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-.main-wrapper{
-    background-color: #f0f2fa;
+.main-wrapper {
+  background-color: #f0f2fa;
 }
 .left-sidebar {
-    background-color: #f0f2fa;
-    padding: 20px;
+  background-color: #f0f2fa;
+  padding: 20px;
 }
 
 .right-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .right-content > div {
-    background-color: #ffffff; /* White background color */
-    border-radius: 15px; /* Adjust border radius as needed */
-    padding: 20px;
-    box-shadow: 5px 5px 15px #bfc2cb, -5px -5px 15px #ffffff; /* Neomorphic effect */
+  background-color: #ffffff; /* White background color */
+  border-radius: 15px; /* Adjust border radius as needed */
+  padding: 20px;
+  box-shadow: 5px 5px 15px #bfc2cb, -5px -5px 15px #ffffff; /* Neomorphic effect */
 }
 
 .sidebar {
-    background-color: transparent; /* Sidebar background color */
+  background-color: transparent; /* Sidebar background color */
 }
 
 .sidebar ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .sidebar ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar ul li a {
-    text-decoration: none;
-    color:#1c274c !important;
+  text-decoration: none;
+  color: #1c274c !important;
 }
 
 /* Define custom colors */
 :root {
-    --color-primary: #138953;   /* Green */
-    --color-secondary: #28921a; /* Greenish */
-    --color-tertiary: #0d8763;  /* Teal */
+  --color-primary: #138953; /* Green */
+  --color-secondary: #28921a; /* Greenish */
+  --color-tertiary: #0d8763; /* Teal */
 }
 
-
-
 .sidebar ul li a {
-    text-decoration: none;
-    color: white; /* Text color for links */
-    display: block; /* Ensure the link takes up the full width of its parent */
-    padding: 10px; /* Add padding for better clickability */
-    transition: background-color 0.3s; /* Add transition for smooth color change */
-    border-radius: 5px;
+  text-decoration: none;
+  color: white; /* Text color for links */
+  display: block; /* Ensure the link takes up the full width of its parent */
+  padding: 10px; /* Add padding for better clickability */
+  transition: background-color 0.3s; /* Add transition for smooth color change */
+  border-radius: 5px;
 }
 
 .sidebar ul li a.active,
 .sidebar ul li a:hover {
-    border-radius: 5px;
-    color: white !important; /* Text color for links */
+  border-radius: 5px;
+  color: white !important; /* Text color for links */
 
-
-    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-tertiary)); /* Gradient background for active/hovered links */
-}
-
-.fa-arrow-left{
-    background-color: #28921a;
-    padding: 8px;
-    border-radius: 25px;
-}
-.tech-text{
-    font-weight: bold;
-}
-.fa-user{
-    padding-right: 9px;
-}
-.fa-gear{
-    padding-right: 9px;
-}
-.fa-shopping-bag{
-    padding-right: 9px;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-tertiary)
+  ); /* Gradient background for active/hovered links */
 }
 
-.img-right img{
-    height: 200px;
-    width: 200px;
+.fa-arrow-left {
+  background-color: #28921a;
+  padding: 8px;
+  border-radius: 25px;
+}
+.tech-text {
+  font-weight: bold;
+}
+.fa-user {
+  padding-right: 9px;
+}
+.fa-gear {
+  padding-right: 9px;
+}
+.fa-shopping-bag {
+  padding-right: 9px;
 }
 
-.btn-round{
-    border-radius: 18px;
-    color: white;
-    padding-left: 18px;
-    padding-right: 18px;
+.img-right img {
+  width: 60px;
 }
 
+.btn-round {
+  border-radius: 18px;
+  color: white;
+  padding-left: 18px;
+  padding-right: 18px;
+}
 
 .saved-address {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    width: 450px;
-    position: relative; /* Needed for pseudo-element positioning */
-    background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 450px;
+  position: relative; /* Needed for pseudo-element positioning */
+  background-color: #f4f4f4;
 }
 
 .custom-hr {
-    width: 60%;
-    border: none;
-    height: 1px;
-    background-color: black;
-    margin-top: 6px;
-    margin-bottom: 16px;
-
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: black;
+  margin-top: 6px;
+  margin-bottom: 16px;
 }
-
-
 
 /* order css */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .order-receipt {
-    width: 100%;
-    margin-top: 5px;
-    /* margin: 50px auto; */
-    border: 1px solid #ddd;
-    padding: 4px 19px 4px 19px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #d3d3d3;
-    border-radius: 10px;
-  }
+.order-receipt {
+  width: 100%;
+  margin-top: 8px;
+  /* margin: 50px auto; */
+  border: 1px solid #f2f2f2;
+  padding: 4px 19px 4px 19px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
 
-  .price p{
-    margin-top: 18px;
-    text-align: center;
+.price p {
+  margin-top: 18px;
+  text-align: center;
+}
 
-  }
+#order-date,
+#order-total {
+  font-weight: bold;
+}
 
-
-
-   #order-date, #order-total {
-    font-weight: bold;
-  }
-
-
-  .text-item{
-    font-size: 14px !important;
+.text-item {
+  font-size: 14px !important;
 }
 
 .custom-container {
-    max-width: 1200px; /* Set your desired width here */
-    margin-right: auto;
-    margin-left: auto;
+  max-width: 1200px; /* Set your desired width here */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.shopping-wrap {
+  margin-right: -3rem;
+}
+
+.content {
+  text-align: left;
+  padding: 1rem;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.top-bar a {
+  color: #1c274c;
+}
+
+.shopping-inner {
+  border-radius: 0px;
+  box-shadow: 5px 5px 15px #bfc2cb, -5px -5px 15px #ffffff; /* Neomorphic effect */
+}
+
+@media (max-width: 554px) {
+  .sidebar ul {
+    display: flex;
+    justify-content: space-between;
   }
+
+  .right-content {
+    width: 70%;
+
+    margin: auto;
+  }
+  .text-personal {
+    display: none;
+  }
+
+  .right-content {
+    width: 86%;
+  }
+
+  .main {
+    margin-top: -2rem !important;
+  }
+
+  .img-right {
+  }
+
+  /* 
+  .sidebar {
+    display: flex;
+  } */
+
+  /* .sidebar img {
+    width: 5rem;
+    height: 5rem;
+  } */
+}
+
+@media (max-width: 765px) {
+  .shopping-wrap {
+    display: none;
+  }
+  .sidebar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .model-wrap {
+    display: block !important;
+  }
+  .shopping-inner {
+    border-radius: 10px;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  position: relative;
+  z-index: 99999;
+}
+
+/* Additional styles */
+.shopping-wrap {
+  margin-top: -1.3rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+.close:hover {
+  color: black; /* Change color on hover if desired */
+}

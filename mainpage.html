@@ -249,14 +249,17 @@
                         <div class="right-bar">
                             <a href=""><i class="fa fa-bars"
                                     aria-hidden="true"></i></a>
-                            <input type="text"
-                                class="form-control form-control-sm"
-                                placeholder="Search in Techzone">
+                            <form action="" class="d-flex">
+                                <input class="form-control me-2" type="search"
+                                    aria-label="Search"
+                                    placeholder="Search in Techzone">
+                            </form>
                         </div>
                     </div>
                     <div class="card-lower">
-                        <div class="card-deck">
-                            <div class="card col-lg-3">
+                        <div class="card-deck ">
+                            <div
+                                class="card col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="card-img-container">
                                     <img src="imgs/image 1.png"
                                         id="openModalImageBtn"
@@ -277,7 +280,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card col-lg-3">
+                            <div
+                                class="card col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="card-img-container">
                                     <img src="imgs/brain.jpeg"
                                         class="card-img-top" alt="...">
@@ -297,7 +301,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card col-lg-3">
+                            <div
+                                class="card col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="card-img-container">
                                     <img src="imgs/apps.jpeg"
                                         class="card-img-top" alt="...">
@@ -317,7 +322,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card col-lg-3">
+                            <div
+                                class="card col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                 <div class="card-img-container">
                                     <img src="imgs/laptop.jpeg"
                                         class="card-img-top" alt="...">
@@ -608,7 +614,26 @@
                     $140</button>
             </div>
         </div>
-        <!-- <div class="cart">
+        <div class="view-cart" id="viewCartSection">
+            <div class="price">
+                <p>Sub Total</p>
+                <h6>$82.00 </h6>
+            </div>
+            <div class="items-div">
+                <p>Items</p>
+                <div class="items-img">
+                    <img src="imgs/Rectangle 294.png" alt="">
+                    <img src="imgs/Rectangle 295.png" alt="">
+                    <img src="imgs/Rectangle 296.png" alt="">
+                    <img src="images/plus.png" alt="">
+                </div>
+            </div>
+            <div class="cart-btn" onclick="toggleSections()">
+                <p>View Cart <i class="fa fa-arrow-right"
+                        aria-hidden="true"></i></p>
+            </div>
+        </div>
+        <div class="cart" id="cartSection" style="display: none;">
             <div class="imgs">
                 <div class="image-container">
                     <img src="imgs/Ellipse 1906.png" alt="">
@@ -631,8 +656,106 @@
                         $82.00 <br>
                         (Sub Total)</p>
                 </div>
+                <i class="fa fa-arrow-up" id="openModalButton"
+                    aria-hidden="true"></i>
             </div>
-        </div> -->
+        </div>
+    </div>
+    <div class="half-screen-module" id="module">
+        <div class="shopping-wrap main model" id="modal">
+            <div class="container">
+                <div class="shopping-inner modal-content fade-in slide-up">
+                    <div class="heading">
+                        <h2>Shopping cart</h2>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="imgs/3d.jpeg">
+                            <p class="item-name">Item 1 <br>
+                                <span>lorem ipsum</span>
+                            </p>
+                        </div>
+                        <div class="right-div" style="display: flex;">
+                            <div class="item-info">
+                                <p class="item-price-quantity">Price: $15 |
+                                    Qty: 1
+                                </p>
+                            </div>
+                            <button class="delete-btn"><i class="fa fa-trash-o"
+                                    aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="imgs/apps.jpeg">
+                            <p class="item-name">Item 2</p>
+                        </div>
+                        <div class="right-div" style="display: flex;">
+                            <div class="item-info">
+                                <p class="item-price-quantity">Price: $15 |
+                                    Qty: 1
+                                </p>
+                            </div>
+                            <button class="delete-btn"><i class="fa fa-trash-o"
+                                    aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <img src="imgs/brain.jpeg">
+                            <p class="item-name">Item 3</p>
+                        </div>
+                        <div class="right-div" style="display: flex;">
+                            <div class="item-info">
+                                <p class="item-price-quantity">Price: $15 |
+                                    Qty: 1
+                                </p>
+                            </div>
+                            <button class="delete-btn"><i class="fa fa-trash-o"
+                                    aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="first">
+                            <p>Recipient Details</p>
+                            <span class="del">Delivery Cost : $5</span>
+                        </div>
+                        <p class="first-p">Deliver within 5 Days</p>
+                        <p class="first-p mob">Enter Mobile Number / Email
+                            Address
+                        </p>
+                        <h6 class="first-p">Address : <span>No 122/8,
+                                Cypress Garden, Budiya
+                                Highway, Bahrain</span>
+                        </h6>
+                        <h6 class="first-p">Phone : <span>+973 -
+                                17210435</span>
+                        </h6>
+                        <button class="btn-success success">Add/Change
+                            Address</button>
+                    </div>
+                    <div class="details">
+                        <div class="first">
+                            <p>Pay Through</p>
+                            <span class="del">Total : $114</span>
+                        </div>
+                        <div class="imgs">
+                            <img class="img-2nd" src="imgs/Group 3959.png"
+                                alt="">
+                            <img src="imgs/MasterCard_Logo 3.png" alt="">
+                            <img src="imgs/Binance-Logo 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-success success "
+                style="font-size: 1rem;  margin:auto">Check
+                out
+                $140</button>
+        </div>
     </div>
     <div id="customModal" class="custom-modal">
         <!-- Modal content -->
@@ -716,9 +839,10 @@
     <div id="modalImage" class="my-modal">
         <!-- Modal content -->
         <div class="my-modal-content">
+            <h3 class="top">Google Future Glass</h3>
             <span class="my-close">&times;</span>
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row ">
+                <div class="col-lg-6 imgs-top">
                     <img src="imgs/image 1.png" alt="..." class="model-img">
                     <div class="lower-imgs">
                         <img src="imgs/Rectangle 294.png" alt="">
@@ -728,15 +852,17 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h3>Google Future Glass</h3>
-                    <p><i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star dull" aria-hidden="true"></i>
-                        (4.0 Rating)
-                    </p>
-                    <h2>$45.00</h2>
+                    <h3 class="bottom">Google Future Glass</h3>
+                    <div class="rating">
+                        <p><i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star dull" aria-hidden="true"></i>
+                            (4.0 Rating)
+                        </p>
+                        <h2>$45.00</h2>
+                    </div>
                     <div class="mid-colors-bar">
                         <div class="clrs">
                             <span>Available Colors</span>
@@ -888,6 +1014,26 @@
                         1));
                 }
             });
+        });
+        // cart code on mobile screen 
+        function toggleSections() {
+            var viewCartSection = document.getElementById("viewCartSection");
+            var cartSection = document.getElementById("cartSection");
+            if (viewCartSection.style.display === "none") {
+                viewCartSection.style.display = "block";
+                cartSection.style.display = "none";
+            } else {
+                viewCartSection.style.display = "none";
+                cartSection.style.display = "block";
+            }
+        }
+    </script>
+    <script>
+        // JavaScript to toggle modal visibility
+        const openModalButton = document.getElementById('openModalButton');
+        const modal = document.getElementById('module');
+        openModalButton.addEventListener('click', function() {
+            modal.style.display = 'block'; // Show the modal
         });
     </script>
     <script src="js/main.js"></script>
